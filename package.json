@@ -10,7 +10,7 @@
   "scripts": {
     "client": "npm run dev --workspace=client",
     "server": "npm run start --workspace=server",
-    "start": "concurrently --kill-others-on-fail \"npm run server\"  \"npm run client\"",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\"  \"npm run client\"",
     "test:client": "cd client && npm test",
     "test:server": "cd server && jest",
     "test": "npm run test:client && npm run test:server"
