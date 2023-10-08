@@ -28,6 +28,13 @@ export const validateFields = (
     return "Please enter a valid email address.";
   } else if (
     formType === "register" &&
+    fieldName === "name" &&
+    touched.email &&
+    formData.name.length < 2
+  ) {
+    return "Please enter a valid name.";
+  } else if (
+    formType === "register" &&
     fieldName === "password" &&
     touched.password &&
     formData.password.length < 7
