@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import useAuthContext from "../../hooks/useAuthContext";
 import { Link } from "react-router-dom";
-import "./register.css";
 import { validateFields } from "../../utils/validation";
 import {
   FormControl,
